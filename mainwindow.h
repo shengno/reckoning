@@ -44,10 +44,15 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QTableWidgetItem>
 
 namespace Ui {
     class MainWindow;
 }
+
+
+
+enum {NAME = 0, NUMBER, PRICE, SUM};
 
 class MainWindow : public QMainWindow
 {
@@ -56,6 +61,11 @@ class MainWindow : public QMainWindow
     public:
         explicit MainWindow(QWidget *parent = 0);
         ~MainWindow();
+
+        void CreateRows(const int NumberOfRows = 42);
+
+    private slots:
+        void UpdateSum(int RowNumber);
 
     private:
         Ui::MainWindow *ui;
