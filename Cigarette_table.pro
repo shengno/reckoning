@@ -13,8 +13,14 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    pricelineedit.cpp \
+    numberlineedit.cpp \
+    lineeditcreator.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    lineeditcreator.h \
+    pricelineedit.h \
+    numberlineedit.h
 
 FORMS    += mainwindow.ui

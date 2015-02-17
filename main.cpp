@@ -26,28 +26,26 @@
 //M*/
 
 
-
-/**
- * @brief
- * @return
- * @author sheng
- * @date
- * @version 0.1
- *
- * @history
- *     <author>       <date>         <version>        <description>
- *      sheng                 0.1
- *
- */
-
 #include "mainwindow.h"
 #include <QApplication>
 
+#include <iostream>
+
+
 int main(int argc, char *argv[])
 {
+
     QApplication a(argc, argv);
     MainWindow w;
+
+    // set the window title
+    w.setWindowTitle("Hello, world.");
+
+    // show the main window
     w.show();
+
+    // add the empty row
+    w.CreateRows(42);
 
     return a.exec();
 }
