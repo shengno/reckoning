@@ -15,11 +15,9 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     pricelineedit.cpp \
-    numberlineedit.cpp \
-    lineeditcreator.cpp
+    numberlineedit.cpp
 
 HEADERS  += mainwindow.h \
-    lineeditcreator.h \
     pricelineedit.h \
     numberlineedit.h
 
